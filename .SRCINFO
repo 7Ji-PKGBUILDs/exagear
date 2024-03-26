@@ -1,0 +1,35 @@
+pkgbase = exagear
+	pkgdesc = ExaGear, an x86_64 to ARM translator by Huawei for Kunpeng
+	pkgver = 3.1.0
+	pkgrel = 1
+	url = https://www.hikunpeng.com/developer/devkit/download/exagear
+	arch = aarch64
+	license = custom
+	noextract = ExaGear_3.1.0.tar.gz
+	options = !strip
+	options = !debug
+	source = https://mirrors.huaweicloud.com/kunpeng/archive/ExaGear/ExaGear_3.1.0.tar.gz
+	sha256sums = 8b81e2f6bd87ce1010c48bb919429492b2136aae4e87f77b39101ff4c312ee54
+
+pkgname = exagear-core-x32a64
+	pkgdesc = ExaGear, an x86_64 to ARM translator by Huawei for Kunpeng (core translator to run 32-bit x86 programs on aarch64)
+
+pkgname = exagear-core-x64a64
+	pkgdesc = ExaGear, an x86_64 to ARM translator by Huawei for Kunpeng (core translator to run 64-bit x86 programs on aarch64)
+
+pkgname = exagear-guest
+	pkgdesc = ExaGear, an x86_64 to ARM translator by Huawei for Kunpeng (Ubuntu 20.04 (x86_64) guest image)
+
+pkgname = exagear-integration
+	pkgdesc = ExaGear, an x86_64 to ARM translator by Huawei for Kunpeng (system integration)
+
+pkgname = exagear-utils
+	pkgdesc = ExaGear, an x86_64 to ARM translator by Huawei for Kunpeng (utilities)
+
+pkgname = exagear-all
+	pkgdesc = ExaGear, an x86_64 to ARM translator by Huawei for Kunpeng (all)
+	depends = exagear-core-x32a64
+	depends = exagear-core-x64a64
+	depends = exagear-guest
+	depends = exagear-integration
+	depends = exagear-utils
